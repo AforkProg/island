@@ -18,7 +18,7 @@ int main()
 	int sto = rand() % 99;
 	field[str][sto] = c;
 
-	int sz = rand() % 40 + 100;
+	int sz = rand() % 100 + 100;
 	for (int sf = 0; sf < sz; sf++)
 	{
 		int sw = rand() % 8;
@@ -28,9 +28,9 @@ int main()
 			str = str;
 			sto = sto + 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 2)
@@ -38,9 +38,9 @@ int main()
 			str = str;
 			sto = sto - 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto > 99 >= str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 3)
@@ -48,9 +48,9 @@ int main()
 			str = str + 1;
 			sto = sto;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 4)
@@ -58,9 +58,9 @@ int main()
 			str = str - 1;
 			sto = sto;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 5)
@@ -68,9 +68,9 @@ int main()
 			str = str + 1;
 			sto = sto + 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 6)
@@ -78,9 +78,9 @@ int main()
 			str = str + 1;
 			sto = sto - 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 7)
@@ -88,9 +88,9 @@ int main()
 			str = str - 1;
 			sto = sto + 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 		else if (sw == 8)
@@ -98,9 +98,9 @@ int main()
 			str = str - 1 ;
 			sto = sto - 1;
 			field[str][sto] = c;
-			if (str > 100 || sto > 100)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				continue;
+				break;
 			}
 		}
 	}
@@ -113,6 +113,7 @@ int main()
 			cout << field[a][i];
 		}
 	}
+	cout << endl;
 	system("pause");
 	return 0;
 }
