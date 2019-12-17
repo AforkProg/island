@@ -27,81 +27,85 @@ int main()
 		{
 			str = str;
 			sto = sto + 1;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
+
 		}
 		else if (sw == 2)
 		{
 			str = str;
 			sto = sto - 1;
-			field[str][sto] = c;
-			if (str < 0 || sto < 0 || sto > 99 >= str >= 99)
+			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
+
 		}
 		else if (sw == 3)
 		{
 			str = str + 1;
 			sto = sto;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
+
 		}
 		else if (sw == 4)
 		{
 			str = str - 1;
 			sto = sto;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
 		}
 		else if (sw == 5)
 		{
 			str = str + 1;
 			sto = sto + 1;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
+
 		}
 		else if (sw == 6)
 		{
 			str = str + 1;
 			sto = sto - 1;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
 		}
 		else if (sw == 7)
 		{
 			str = str - 1;
 			sto = sto + 1;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
 		}
 		else if (sw == 8)
 		{
 			str = str - 1 ;
 			sto = sto - 1;
-			field[str][sto] = c;
 			if (str < 0 || sto < 0 || sto >= 99 || str >= 99)
 			{
-				break;
+				continue;
 			}
+			field[str][sto] = c;
 		}
 	}
 

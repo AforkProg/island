@@ -1,4 +1,3 @@
 ﻿  main.cpp
 c:\users\user\source\repos\island\island\main.cpp(6): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-c:\users\user\source\repos\island\island\main.cpp(41): warning C4804: >=: небезопасное использование типа "bool" в операции
   Island.vcxproj -> C:\Users\User\source\repos\Island\Debug\Island.exe
